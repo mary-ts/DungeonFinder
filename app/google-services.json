@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "284469630538",
+    "project_id": "dungeon-finder-dfd23",
+    "storage_bucket": "dungeon-finder-dfd23.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:284469630538:android:1c427ea41cdda02f79f8b3",
+        "android_client_info": {
+          "package_name": "ie.ul.dungeonfinder"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "284469630538-tj17q4frp7bs6l9rdhmnirfualmcj9dd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCzXN4KETj4grnwrJsZkAZE3kvMx_r5aZ8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "284469630538-tj17q4frp7bs6l9rdhmnirfualmcj9dd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".login"
+    >
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="201dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="105dp"
+        android:layout_marginTop="548dp"
+        android:layout_marginEnd="105dp"
+        android:onClick="OnClickSignIn"
+        android:text="Sign In"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="416dp"
+        android:layout_height="445dp"
+        android:layout_marginTop="74dp"
+        android:layout_marginBottom="77dp"
+        android:contentDescription="A d20 Dice"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/d20" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
