@@ -16,6 +16,7 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginBottom="30dp"/>
 
+    <!-- all of these edit texts basically just  set up each row that the user will be able to input text into -->
     <EditText
         android:id="@+id/et_name_up"
         android:layout_width="match_parent"
