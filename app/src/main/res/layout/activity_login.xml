@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg"    <!-- This sets the background ofof the login screen to a nice theme made by rachel -->
+    android:background="@drawable/bg"   
     tools:context=".login">   
 
 <!-- this is the sign in button! -->
