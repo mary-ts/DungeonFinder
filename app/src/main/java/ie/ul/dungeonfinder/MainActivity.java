@@ -16,6 +16,10 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {    //this is what gets created when main activity is first told to run
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        
+        Fragment selectedFragment = new ProfileFragment();   // this sets the starting fragment at the profile
+        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
+                selectedFragment).commit();
 
         BottomNavigationView bottomNav = findViewById(R.id.bottom_navigation);   // this is bringing up the bottom navigation bar
         bottomNav.setOnNavigationItemSelectedListener(navListener);
@@ -31,14 +35,17 @@ public class MainActivity extends AppCompatActivity {
                         case R.id.nav_map:
                             selectedFragment = new MapFragment();   //pulls up a map 
                             break;
-                        case R.id.nav_friends:
-                            selectedFragment = new FriendsFragment();  
+                            
+                            case R.id.nav_profile:
+                            selectedFragment = new ProfileFragment(); //shows the profile
                             break;
-                        case R.id.nav_camp:
-                            selectedFragment = new CampaignFragment();  //pulls up the calendar
+
+                            case R.id.nav_calendar:
+                            selectedFragment = new CalendarFragment(); //pulls up the calendar
                             break;
+                      
                     }
-                    getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
+                    getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,  // this is where the fragments get switched around
                             selectedFragment).commit();
                     return true;
                 }
