@@ -4,20 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/dice_bg"
-    tools:context=".login">
+    android:background="@drawable/bg"    <!-- This sets the background ofof the login screen to a nice theme made by rachel -->
+    tools:context=".login">   
 
-    <ImageView
-        android:id="@+id/logo"
-        android:layout_width="391dp"
-        android:layout_height="149dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="4dp"
-        android:contentDescription="A d20 Dice"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/dungeon_logo" />
-
+<!-- this is the sign in button! -->
     <Button
         android:id="@+id/button"
         style="@style/FirebaseUI.Button"
@@ -30,16 +20,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.898" />
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="416dp"
-        android:layout_height="445dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="140dp"
-        android:contentDescription="A d20 Dice"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/d20" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
