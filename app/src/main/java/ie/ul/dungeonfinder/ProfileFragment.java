@@ -12,6 +12,7 @@ public class ProfileFragment extends Fragment {
 
     @Nullable
     @Override
+    //shows the Profile editor
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         return inflater.inflate(R.layout.fragment_profile, container, false);
     }
