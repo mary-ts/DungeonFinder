@@ -6,6 +6,7 @@ import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+// This is importing all of the extenstions needed for Firebase login//
 import com.firebase.ui.auth.AuthUI;
 import com.firebase.ui.auth.ErrorCodes;
 import com.firebase.ui.auth.IdpResponse;
@@ -15,17 +16,17 @@ import com.google.firebase.auth.FirebaseUser;
 import java.util.Arrays;
 import java.util.List;
 
-public class login extends AppCompatActivity {
+public class login extends AppCompatActivity { 
 
     private static final int RC_SIGN_IN = 123;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
+        super.onCreate(savedInstanceState);         // the call to create an instance of the login page
+        setContentView(R.layout.activity_login);   // sets the screen view to the activity_login.xml view
     }
 
-    public void OnClickSignIn (View view){
+    public void OnClickSignIn (View view){                   
         List<AuthUI.IdpConfig> providers = Arrays.asList(
                 new AuthUI.IdpConfig.EmailBuilder().build()
         );
@@ -60,7 +61,7 @@ public class login extends AppCompatActivity {
                     System.out.println("Sign in cancelled");
                     return;
                 }
-                if (response.getError().getErrorCode() == ErrorCodes.NO_NETWORK) {
+                if (response.getError().getErrorCode() == ErrorCodes.NO_NETWORK) {  //error ems
                     System.out.println("No internet Connection");
                     return;
                 }
