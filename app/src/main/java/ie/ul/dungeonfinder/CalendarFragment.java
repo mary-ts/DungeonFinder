@@ -28,7 +28,8 @@ public class CalendarFragment extends Fragment implements DatePickerDialog.OnDat
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.fragment_calendar, container, false);
         dateText = v.findViewById(R.id.date_text);
-
+        
+        //When the "Show Dialog" button is clicked, the Date Picker Dialog (the calender pop up) is shown
         v.findViewById(R.id.show_dialog).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -45,6 +46,7 @@ public class CalendarFragment extends Fragment implements DatePickerDialog.OnDat
 
     }
 
+    //pretty much gets the date chosen from the calender
     public void showDatePickerDialog(){
         DatePickerDialog datePickerDialog = new DatePickerDialog(
                 getActivity(),
@@ -57,6 +59,7 @@ public class CalendarFragment extends Fragment implements DatePickerDialog.OnDat
 
     @Override
     public void onDateSet(DatePicker view, int year, int month, int dayOfMonth) {
+        //outputs the date that was clicked by the user onto the calender screen
         String date = "month/day/year: " + month + "/" + dayOfMonth + "/" + year;
         dateText.setText(date);
     }
