@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <!-- this basically sets up the button "show dialog" in the calendar tab. it maps out it's layout and what is written inside the button -->
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
