@@ -3,14 +3,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="ie.ul.dungeonfinder">
 
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
+        android:theme="@style/Theme.DungeonFinder" >
 
-        android:theme="@style/Theme.AppCompat.NoActionBar" >
+        <meta-data android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyD7-wnXoKaKhqUoWRHwL5_yZx1XYHsDoZM"/>
 
         <activity
             android:name="ie.ul.dungeonfinder.MainActivity"
