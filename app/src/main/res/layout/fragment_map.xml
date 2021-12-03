@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <!-- gets the map fragment to appear in the tab -->
     <fragment
         android:layout_width="match_parent"
         android:layout_height="match_parent"
