@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+       <!-- key to access google maps -->
        <string name="map_key" translatable="false" >AIzaSyD7-wnXoKaKhqUoWRHwL5_yZx1XYHsDoZM
     </string>
 </resources>
